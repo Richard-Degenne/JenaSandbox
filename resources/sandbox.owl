@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox"
+     xml:base="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox"
+     xmlns:jena-sandbox="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox">
+        <rdfs:comment>This is a sample ontology to learn Jena.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#hasResearch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#hasResearch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Expert"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#hasSubject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Expert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Expert"/>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research"/>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Expert"/>
+        <jena-sandbox:hasResearch rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Mary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Mary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Expert"/>
+        <jena-sandbox:hasResearch rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Reasearch1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Reasearch1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research"/>
+        <jena-sandbox:hasSubject rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject1a"/>
+        <jena-sandbox:hasSubject rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject1b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research"/>
+        <jena-sandbox:hasSubject rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject2a"/>
+        <jena-sandbox:hasSubject rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject2b"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject1a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject1a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject1b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject1b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject2a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject2a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject2b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject2b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Thomas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Thomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Expert"/>
+        <jena-sandbox:hasResearch rdf:resource="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Reasearch1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Expert"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Research"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Subject"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#John"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Mary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/richou/ontologies/2016/10/jena-sandbox#Thomas"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
